@@ -17,6 +17,7 @@
 		EE2ACB3526FB3DA4001695FD /* Repos.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3426FB3DA3001695FD /* Repos.swift */; };
 		EE2ACB3726FB3DE6001695FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3626FB3DE6001695FD /* Item.swift */; };
 		EE2ACB3926FB3EF1001695FD /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3826FB3EF1001695FD /* Owner.swift */; };
+		EE2ACB3B26FB6BA7001695FD /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3A26FB6BA7001695FD /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EE2ACB3426FB3DA3001695FD /* Repos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repos.swift; sourceTree = "<group>"; };
 		EE2ACB3626FB3DE6001695FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EE2ACB3826FB3EF1001695FD /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		EE2ACB3A26FB6BA7001695FD /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				EE2ACB2826FA36CB001695FD /* LaunchScreen.storyboard */,
 				EE2ACB2B26FA36CB001695FD /* Info.plist */,
 				EE2ACB3126FB181D001695FD /* RepoCollectionViewCell.swift */,
+				EE2ACB3A26FB6BA7001695FD /* Parser.swift */,
 			);
 			path = "Trending Git";
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				EE2ACB3226FB181D001695FD /* RepoCollectionViewCell.swift in Sources */,
 				EE2ACB3926FB3EF1001695FD /* Owner.swift in Sources */,
 				EE2ACB2226FA36C8001695FD /* ViewController.swift in Sources */,
+				EE2ACB3B26FB6BA7001695FD /* Parser.swift in Sources */,
 				EE2ACB1E26FA36C8001695FD /* AppDelegate.swift in Sources */,
 				EE2ACB3726FB3DE6001695FD /* Item.swift in Sources */,
 				EE2ACB2026FA36C8001695FD /* SceneDelegate.swift in Sources */,

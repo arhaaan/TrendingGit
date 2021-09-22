@@ -9,13 +9,7 @@
 import Foundation
 
 struct Repos: Codable {
-    var totalCount: Int?
-    var incompleteResults: Bool?
+//    var totalCount: Int?
+//    var incompleteResults: Bool?
     var items: [Item]?
-
-    enum CodingKeys: String, CodingKey {
-        case totalCount = "total_count"
-        case incompleteResults = "incomplete_results"
-        case items
-    }
 }
