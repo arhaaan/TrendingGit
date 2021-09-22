@@ -48,6 +48,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! RepoCollectionViewCell
         cell.repoNameLbl.text = items[indexPath.row].name
+        cell.repoImg.load(url: items[indexPath.row].owner!.avatar_url)
+        cell.forkLbl.text = "\(items[indexPath.row].forks)"
+        cell.starLbl.text = "\(items[indexPath.row].stargazers_count)"
+        cell.FSView.layer.borderWidth = 0.5
+        cell.FSView.layer.borderColor = UIColor.black.cgColor
+        cell.FSView.layer.cornerRadius = 6
+    
         return cell
     }
     

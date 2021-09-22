@@ -41,7 +41,7 @@ struct Item: Codable {
     var cloneURL: String?
     var svnURL: String?
     var homepage: String?
-    var size, stargazersCount, watchersCount: Int?
+    var stargazers_count: Int
     var language: String?
     var hasIssues, hasProjects, hasDownloads, hasWiki: Bool?
     var hasPages: Bool?
@@ -51,7 +51,9 @@ struct Item: Codable {
     var openIssuesCount: Int?
 //    var license: License?
     var allowForking: Bool?
-    var forks, openIssues, watchers: Int?
+    var forks: Int
+    var openIssues, watchers: Int?
+    
 //    var defaultBranch: DefaultBranch?
     var score: Int?
 

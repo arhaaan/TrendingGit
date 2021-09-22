@@ -11,16 +11,16 @@ import Foundation
 struct Owner: Codable {
     var login: String?
     var id: Int?
-    var nodeID: String?
-    var avatarURL: String?
-    var gravatarID: String?
-    var url, htmlURL, followersURL: String?
-    var followingURL, gistsURL, starredURL: String?
-    var subscriptionsURL, organizationsURL, reposURL: String?
-    var eventsURL: String?
-    var receivedEventsURL: String?
-//    var type: TypeEnum?
-    var siteAdmin: Bool?
+//    var nodeID: String?
+    var avatar_url: URL
+//    var gravatarID: String?
+//    var url, htmlURL, followersURL: String?
+//    var followingURL, gistsURL, starredURL: String?
+//    var subscriptionsURL, organizationsURL, reposURL: String?
+//    var eventsURL: String?
+//    var receivedEventsURL: String?
+////    var type: TypeEnum?
+//    var siteAdmin: Bool?
 
 //    enum CodingKeys: String, CodingKey {
 //        case login, id
