@@ -70,7 +70,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
                }
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let itemSelected = items[indexPath.row]
+        let vc = storyboard?.instantiateViewController(identifier: "detail") as! DetailViewController
+        vc.item = itemSelected
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 

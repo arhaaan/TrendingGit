@@ -334,6 +334,7 @@
                         <outlet property="imageView" destination="IJI-Ql-Van" id="7t9-r9-enl"/>
                         <outlet property="nameLbl" destination="f7N-BV-tb2" id="CUI-D4-9X7"/>
                         <outlet property="starLbl" destination="mo3-rO-EKg" id="GC8-rb-IPT"/>
+                        <outlet property="webView" destination="G8d-Rn-VWR" id="PpJ-Uo-NQJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUe-kY-Oiw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

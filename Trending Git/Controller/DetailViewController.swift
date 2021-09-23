@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import WebKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, WKNavigationDelegate{
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
@@ -18,6 +19,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var forkLbl: UILabel!
     
     @IBOutlet weak var SFView: UIView!
+    
+    @IBOutlet weak var webView: WKWebView!
     
     var item : Item?
     
@@ -31,8 +34,11 @@ class DetailViewController: UIViewController {
         imageView.load(url: (item?.owner!.avatar_url)!)
         nameLbl.text = item?.name
         descLbl.text = item?.description
-        starLbl.text = "\(item?.stargazers_count)"
-        forkLbl.text = "\(item?.forks)"
+        starLbl.text = "\(item!.stargazers_count)"
+        forkLbl.text = "\(item!.forks)"
+        
+        let url = URL(string: item?.html_url ?? "")!
+        webView.load(URLRequest(url: url))
         
     }
     

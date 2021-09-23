@@ -9,7 +9,5 @@
 import Foundation
 
 struct Repos: Codable {
-//    var totalCount: Int?
-//    var incompleteResults: Bool?
     var items: [Item]?
 }
