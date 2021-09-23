@@ -45,10 +45,10 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-PU-Fjs">
-                                                    <rect key="frame" x="33" y="87" width="105" height="21"/>
+                                                    <rect key="frame" x="8" y="87" width="154" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Lwm-Z8-aRw"/>
-                                                        <constraint firstAttribute="width" constant="105" id="b62-5v-wS6"/>
+                                                        <constraint firstAttribute="width" constant="154" id="NIx-pe-cFF"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -144,11 +144,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="vgl-18-ofO" firstAttribute="top" secondItem="vTg-zX-BUV" secondAttribute="top" constant="8" id="CXB-IA-Qed"/>
+                                                <constraint firstItem="Hkf-PU-Fjs" firstAttribute="top" secondItem="vgl-18-ofO" secondAttribute="bottom" constant="8" id="EAc-av-f5q"/>
                                                 <constraint firstItem="zkW-xI-347" firstAttribute="top" secondItem="Hkf-PU-Fjs" secondAttribute="bottom" constant="8" id="EjO-Bb-pIn"/>
                                                 <constraint firstItem="vgl-18-ofO" firstAttribute="leading" secondItem="vTg-zX-BUV" secondAttribute="leading" constant="33" id="ONV-z1-hwx"/>
-                                                <constraint firstItem="Hkf-PU-Fjs" firstAttribute="top" secondItem="vgl-18-ofO" secondAttribute="bottom" constant="8" id="WK5-Wn-ibE"/>
                                                 <constraint firstItem="zkW-xI-347" firstAttribute="leading" secondItem="vTg-zX-BUV" secondAttribute="leading" constant="6" id="fYD-mF-vjS"/>
-                                                <constraint firstItem="Hkf-PU-Fjs" firstAttribute="leading" secondItem="vTg-zX-BUV" secondAttribute="leading" constant="33" id="rfO-dP-naV"/>
+                                                <constraint firstItem="Hkf-PU-Fjs" firstAttribute="leading" secondItem="vTg-zX-BUV" secondAttribute="leading" constant="8" id="kIf-Ib-Y6L"/>
                                                 <constraint firstAttribute="trailing" secondItem="zkW-xI-347" secondAttribute="trailing" constant="6" id="wUb-Bu-7Wn"/>
                                             </constraints>
                                         </collectionViewCellContentView>

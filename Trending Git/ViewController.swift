@@ -8,35 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
     let parser = Parser()
     
-    var items = [Item]()
+    var items: [Item] = []
     
-    var names = ["Dudu", "Dada"]
+    var page = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        parser.getRepo { data in
-            
-            self.items = data?.items ?? []
-            DispatchQueue.main.async {
-                self.collectionView.reloadData()
-            }
-            
-        }
+        searchBar.delegate = self
         
         
     }
-
+    
+    
 
 }
 
@@ -62,5 +55,35 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return CGSize(width: 170, height: 170)
     }
     
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+         page += 1
+               let offsetY = scrollView.contentOffset.y + 5
+               let contentHeight = scrollView.contentSize.height
+               
+               if offsetY >= contentHeight - scrollView.frame.height{
+                parser.getRepo(search: searchBar.text ?? "", page: page) { (data) in
+                    self.items.append(contentsOf: data?.items ?? [])
+                    DispatchQueue.main.async {
+                        self.collectionView.reloadData()
+                    }
+                }
+               }
+    }
+    
 }
 
+extension ViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.items.removeAll()
+        parser.getRepo(search: searchBar.text ?? "", page: 1) { data in
+            
+        self.items.append(contentsOf: data?.items ?? [])
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+        
+
+    }
+
+}
