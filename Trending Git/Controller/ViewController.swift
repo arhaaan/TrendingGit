@@ -59,7 +59,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
          page += 1
                let offsetY = scrollView.contentOffset.y + 5
                let contentHeight = scrollView.contentSize.height
-               
+               //load more data
                if offsetY >= contentHeight - scrollView.frame.height{
                 parser.getRepo(search: searchBar.text ?? "", page: page) { (data) in
                     self.items.append(contentsOf: data?.items ?? [])
@@ -80,9 +80,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
 }
 
 extension ViewController: UISearchBarDelegate{
+    // search repos
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.items.removeAll()
-        parser.getRepo(search: searchBar.text ?? "", page: 1) { data in
+        self.page = 1
+        parser.getRepo(search: searchBar.text ?? "", page: page) { data in
             
         self.items.append(contentsOf: data?.items ?? [])
             DispatchQueue.main.async {
