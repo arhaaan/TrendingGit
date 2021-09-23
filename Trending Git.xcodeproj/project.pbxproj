@@ -18,6 +18,7 @@
 		EE2ACB3726FB3DE6001695FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3626FB3DE6001695FD /* Item.swift */; };
 		EE2ACB3926FB3EF1001695FD /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3826FB3EF1001695FD /* Owner.swift */; };
 		EE2ACB3B26FB6BA7001695FD /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3A26FB6BA7001695FD /* Parser.swift */; };
+		EE2ACB3E26FC5BAA001695FD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ACB3D26FC5BAA001695FD /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EE2ACB3626FB3DE6001695FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EE2ACB3826FB3EF1001695FD /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		EE2ACB3A26FB6BA7001695FD /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		EE2ACB3D26FC5BAA001695FD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +68,10 @@
 		EE2ACB1C26FA36C8001695FD /* Trending Git */ = {
 			isa = PBXGroup;
 			children = (
+				EE2ACB3C26FC5B48001695FD /* Controller */,
 				EE2ACB3326FB3D85001695FD /* Models */,
 				EE2ACB1D26FA36C8001695FD /* AppDelegate.swift */,
 				EE2ACB1F26FA36C8001695FD /* SceneDelegate.swift */,
-				EE2ACB2126FA36C8001695FD /* ViewController.swift */,
 				EE2ACB2326FA36C8001695FD /* Main.storyboard */,
 				EE2ACB2626FA36CB001695FD /* Assets.xcassets */,
 				EE2ACB2826FA36CB001695FD /* LaunchScreen.storyboard */,
@@ -88,6 +90,15 @@
 				EE2ACB3826FB3EF1001695FD /* Owner.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EE2ACB3C26FC5B48001695FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE2ACB2126FA36C8001695FD /* ViewController.swift */,
+				EE2ACB3D26FC5BAA001695FD /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2ACB3E26FC5BAA001695FD /* DetailViewController.swift in Sources */,
 				EE2ACB3526FB3DA4001695FD /* Repos.swift in Sources */,
 				EE2ACB3226FB181D001695FD /* RepoCollectionViewCell.swift in Sources */,
 				EE2ACB3926FB3EF1001695FD /* Owner.swift in Sources */,

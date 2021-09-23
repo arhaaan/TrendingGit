@@ -11,29 +11,6 @@ import UIKit
 
 struct Parser {
     
-    
-//    func parse(comp: @escaping ([Item])->() ) {
-//
-//        let api = URL(string: "https://api.github.com/search/repositories?q=spotify&page=1&per_page=10")!
-//
-//        URLSession.shared.dataTask(with: URLRequest(url: api)){data,response,error in
-//            DispatchQueue.main.async {
-//                if error != nil {
-//                    print(error?.localizedDescription)
-//                    return
-//                }
-//                do{
-//                    let result = try JSONDecoder().decode(Repos.self, from: data!)
-//                    comp(result.items!)
-//                }catch{
-//
-//                }
-//            }
-//
-//        }.resume()
-//
-//    }
-    
     func getRepo(search: String, page: Int,completion: @escaping(Repos?) -> Void){
         
         let url = "https://api.github.com/search/repositories?q=\(search)&page=\(page)&per_page=10"

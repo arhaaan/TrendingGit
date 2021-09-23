@@ -14,7 +14,7 @@ struct Item: Codable {
     var itemPrivate: Bool?
     var owner: Owner?
     var htmlURL: String?
-    var itemDescription: String?
+    var description: String?
     var fork: Bool?
     var url: String?
     var forksURL: String?
