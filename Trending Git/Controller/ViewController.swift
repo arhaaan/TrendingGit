@@ -52,7 +52,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 170, height: 170)
+        return CGSize(width: (UIScreen.main.bounds.width/2)-10, height: (UIScreen.main.bounds.width/2)-10)
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
